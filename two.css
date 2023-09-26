@@ -1,0 +1,120 @@
+.subtext1{
+    font-size: 0.2em;
+    font-family: Arial;
+    margin-top:55em;
+    margin-left: 1em;
+    position: absolute
+}
+.subtext2{
+    font-size: 0.2em;
+    font-family: Arial;
+    margin-top:14em;
+    margin-left: 1em;
+    position: absolute
+}
+.subtext12{
+    font-size: 0.2em;
+    font-family: Arial;
+    margin-top:3em;
+    margin-left: 1em;
+    position: absolute
+}
+.subtext13{
+    font-size: 0.2em;
+    font-family: Arial;
+    margin-top:48em;
+    margin-left: 1em;
+    position: absolute
+}
+.subtext123{
+    font-size: 0.2em;
+    font-family: Arial;
+    margin-top:48em;
+    margin-left: 1em;
+    position: absolute
+}
+.box{
+    margin-top:2em;
+    width: 20em; /* Set the width of the box */
+    height: 8em; /* Set the height of the box */
+    border: transparent; /* Add a border with a color */
+    background-color: transparent; /* Set the background color */
+    padding: 20px;
+}
+.box3{
+    margin-top:0em;
+    margin-left: 10em;
+    width: 20em; /* Set the width of the box */
+    height: 15em; /* Set the height of the box */
+    border: transparent; /* Add a border with a color */
+    background-color: transparent; /* Set the background color */
+    padding: 20px;
+}
+.box4{
+    margin-top:-0.2em;
+    margin-left: 10em;
+    width: 20em; /* Set the width of the box */
+    height: 15em; /* Set the height of the box */
+    border: transparent; /* Add a border with a color */
+    background-color: transparent; /* Set the background color */
+    padding: 20px;
+}
+.box6{
+    margin-top:0em;
+    margin-left: 0em;
+    z-index:1;
+    width: 2em; /* Set the width of the box */
+    height: 2em; /* Set the height of the box */
+    border: transparent; /* Add a border with a color */
+    background-color: transparent; /* Set the background color */
+ 
+}
+
+.box7{
+   position: absolute;
+   margin-top:2em;
+   margin-right:10em; 
+   height:0.5em;
+   width:0.5em;
+}
+
+.box8{
+    position: absolute;
+    margin-top:1em;
+    margin-right:-10em; 
+    height:4em;
+    width:20em;
+ }
+
+ .box15{
+    margin-top:0em;
+    margin-left: 0em;
+    z-index:1;
+    width: 1em; /* Set the width of the box */
+    height: 2em; /* Set the height of the box */
+    border: transparent; /* Add a border with a color */
+    background-color: transparent; /* Set the background color */
+ 
+}
+
+.stand1{
+    position: absolute;
+    font-size: 0.2;
+    font-weight: arial;
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.stand2{
+    font-size: 0.2;
+    font-weight: arial;
+    margin-top: 7em;
+    margin-left: 2em;
+    position:absolute;
+}
+.stand3{
+    font-size: 0.2;
+    font-weight: arial;
+    margin-top: 3em;
+    margin-left: 2em;
+}

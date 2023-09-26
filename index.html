@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CR7 Stats and Trends</title>
+    <link rel="stylesheet" href="next.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="next.css">
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="two.css">
+    <link rel="stylesheet" href="general.css">
+    <script id="script"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    <script id="countDisplay.js"></script>
+    <script id="script.js"></script>
+  </head>
+  <style>
+    .custom-image {
+        margin-top: 3em;
+        width: 7em;
+        margin-left:0em;
+        height: 5em;
+        border: transparent;
+        background-color: transparent;
+    }
+    .custonujk {
+        margin-top: 1em;
+        width: 3em;
+        margin-left:3em;
+        height: 4em;
+        border: transparent;
+        background-color: transparent;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="rest">
+        <div class="sibow123a2">
+          <p class="text">Variability in Ronaldo's Annual Assists: Yearly Distribution Analysis</p>
+          <p class ="sub subtext123"> -Including Friendlies - *Messi: Outlier: 0, Lower: 5, Q1 15.5, Median 19, Q3 24,Upper 30, Outlier: 37 
+            *Ronaldo Lowest: 4, Q1: 7.25, Median: 12, Q3: 15.75, Max: 19 </p>
+          <div class ="custonujk">
+            <img src="hghj.png">
+          </div>
+          
+        </div>
+        <div class="sibow123a1">
+          <p class="text1">Cristiano Ronaldo: Stats and Trends </p>
+
+        </div>
+        <p class="text2">Last Updated: 9/23/2023</p>
+        <div class="inbox1">
+          <p class="text">Topic</p>
+          <p class="head1">Amount of Goals Scored (No Friendlies):</p>
+          <h1 class="counter max " data-count="850">0</h1>
+          <p class ="head1f"> Assists: </p>
+          <p class ="head1f1"> Appearances: </p>
+        <h1 class=" max1 " >241</h1>
+        <h1 class=" max2 ">1183</h1>
+        <p class ="sub subtext1"> *Cristiano Ronaldo, aka CR7, is a soccer player from Portugal. Ronaldo has 
+          become a worldwide sensation due to his feats on the field and overall charisma. Ronaldo has been 
+          touted as the so-called "Goat" by many fans and has captivated many people with his signature
+          "Siu" emote
+      </p>
+
+        </div>
+       
+        <div class="inbox2">
+          <p class="text">Goals Scored </p>
+          <div class="box" >
+            <canvas id="barChart" width="400" height="400"></canvas>
+          </div>
+          <p class ="sub subtext1"> -Excluding Friendlies- Games Played: Al Nassr: 28, Manchester United: 346,
+            Juventus: 134, Real Madrid: 438, Sporting CP: 31, Portgual: 200 (August 2023) </p>
+        </div>
+        <div class="sibow1">
+          <p class="text">Club Goals Over the Years  </p>
+          
+
+        </div>
+        <div class="inbox12">
+          <p class="text">Hat-Tricks As Ronaldo Aged</p>
+          <div class ="box8">
+            <canvas id="lineChart"></canvas>
+            <script src="your-script.js"></script>
+            <p class ="sub subtext12"> *Goals scored for the entire year: club, world cup, nationals, etc. Including friendlies.  </p>
+
+          </div>
+       
+        </div>
+        <div class="inbox22">
+          <p class="text">Appearances</p>
+          <div  class="box15">
+            <img src="Piechart.png" alt="Description of the image" class="custom-image">
+            <p class ="sub subtext2">(Excluding Friendlies) *Ronaldo has appeared in a total of 1177 games. </p>
+          
+          </div>
+         
+        </div>
+        
+        <div class="sibow123">
+          <p class="text"></p>
+          <div class="box4">
+            <canvas id="histogram" ></canvas>
+    
+          </div>
+          <div class = "box7">
+            <img src="d.png" >
+          </div>
+          <p class ="sub subtext13"> (As of August 2023- Excluding Juventus 2021-22 & Manchester United 2022-23 & Portugal goals -Excluding Friendly Matches) </p>
+
+        </div>
+        <div class="sibow123ay">
+          
+          <p class="text">Sources and Links</p>
+          <a class = "stand3" href ="https://www.linkedin.com/in/areef-hossain-603255263">View Linkedin Profile</a>
+          <a class ="stand1" href="https://www.messivsronaldo.app">Source 1</a>
+          <a class ="stand2" href="https://www.goal.com/en-us/lists/career-goals-cristiano-ronaldo-man-united-real-madrid/blt9dc3234ddd889216">Source 2</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script> 
+
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach(counter => {
+            let initial_count = 0;
+            const final_count = counter.dataset.count;
+            // console.log(final_count);
+
+            let  counting = setInterval(updateCounting, 1);
+
+          function updateCounting() {
+
+                if (initial_count < 1000) {
+                    initial_count += 5;
+                    counter.innerText = "~"+initial_count + '+';
+                }
+
+                if (initial_count >= 1000) {
+                    initial_count += 100;
+                    counter.innerText = (initial_count / 1000).toFixed(1) + 'K+';
+                }
+
+                if (initial_count >= 10000) {
+                    initial_count += 5000;
+                }
+
+                if (initial_count >= 1000000) {
+                    initial_count += 500000;
+                    counter.innerText = (initial_count / 1000000).toFixed(1) + 'M+';
+                }
+
+                if (initial_count >= final_count) {
+                    clearInterval(counting);
+                }
+            }
+        })
+// script.js
+
+// Sample data for the bar graph
+// Get the canvas element
+
+
+        const data = {
+          labels: [ "Al Nassr (8/23/2023)",'Manchester United', 'Juventus', "Real Madrid","Sporting CP",'Portugal'],
+          datasets: [{
+            label: 'Comparison',
+            
+            backgroundColor: ['yellow', 'red', 'black','blue','green','gold'],
+            data: [23,145,101,450,5,123], // Replace with your data
+          }]
+        };
+
+        // Configuration options for the bar graph
+        const options = {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        };
+
+        // Get the canvas element and create the bar chart
+        const ctx1 = document.getElementById('barChart').getContext('2d');
+        const barChart = new Chart(ctx1, {
+          type: 'bar',
+          data: data,
+          options: options,
+        });
+// Sample data (replace this with your own data)
+
+
+
+const ctx = document.getElementById('histogram').getContext('2d');
+
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2019,2020,2021,2022,2023],
+    datasets: [{
+      label: 'Club Goals Over The Years',
+      data: [5,6,9,12,23,42,26,33,53,60,55,51,61,51,42,44,28,37,36,24,3],
+      backgroundColor: ['green','red','red','red','red','red','red','blue','blue','blue','blue','blue','blue','blue','blue','blue','black','black','black','red','yellow'], // Specify different colors here
+    
+    }]
+  },
+  options: {
+    scales: {
+      xAxes: [{
+        display: false,
+        barPercentage: 1.3,
+        ticks: {
+          max: 3,
+        }
+      }, {
+        display: true,
+        ticks: {
+          autoSkip: false,
+          max: 4,
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+
+// Data for the line graph
+const lineGraphData = {
+    labels: [20, 23, 26, 29, 32, 35,38],
+    datasets: [
+        {
+            label: 'Ronaldo',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 0,8, 4, 3, 0,3],
+            fill: false,
+        },
+        {
+            label: 'Messi', // Label for the second line
+            borderColor: 'rgb(255, 99, 132)', // Different color for the second line
+            borderColor: 'rgb(75, 192, 192)',
+            data: [0, 4, 4, 2,3,1, 0], // Data for the second line
+            fill: false,
+        },
+    ],
+
+};
+
+// Configuration for the chart
+const chartConfig = {
+    type: 'line',
+    data: lineGraphData,
+};
+
+// Get the canvas element and create the chart
+const chartCanvas = document.getElementById('lineChart').getContext('2d');
+const lineChart = new Chart(chartCanvas, chartConfig);
+
+
+    
+  </script>
+</html>
